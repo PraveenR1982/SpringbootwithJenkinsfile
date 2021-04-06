@@ -3,7 +3,7 @@ pipeline {
     stages {
 		stage(checkout_scm) { 
             steps {
-               		git  credentialsId: 'GitHub', url: 'https://github.com/PraveenR1982/SpringbootwithJenkinsfile.git'
+               		git  credentialsId: 'GitHub', url: 'https://github.com/PraveenR1982/SpringbootwithJenkinsfile.git',branch: 'stage2'
                 } 
             }
         stage('Build') { 
