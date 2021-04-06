@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-               		echo 'hello every one'
+               		sh 'mvn clean install'
                 } 
             }
         }
